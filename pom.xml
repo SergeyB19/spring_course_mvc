@@ -4,7 +4,11 @@
   <groupId>com.zaurtregulov.spring.mvc</groupId>
   <artifactId>spring_course_mvc</artifactId>
   <packaging>war</packaging>
-  <version>1.0-SNAPSHOT</version>
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
+    <version>1.0-SNAPSHOT</version>
   <name>spring_course_mvc Maven Webapp</name>
   <url>http://maven.apache.org</url>
 
