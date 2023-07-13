@@ -2,12 +2,12 @@
 <html>
 
 <body>
-
-<h2>I wish you luck in Spring MVC learning</h2>
+<h2>Dear Employee, you are Welcome!!!</h2>
 <br>
 <br>
+<br>
 
-<a href="askDetails">Please write your details</a>
+Your name: ${param.employeeName}
 
 </body>
 
