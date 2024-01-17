@@ -11,6 +11,7 @@
 <br>
 
 <%--Your name: ${param.employeeName}--%>
-Your name: ${nameAttribute} ${description} <%--  model.addAttribute("nameAttribute", empName);--%>
+Your name: ${nameAttribute}
+<%--${description} &lt;%&ndash;  model.addAttribute("nameAttribute", empName);&ndash;%&gt;--%>
 </body>
 </html>
