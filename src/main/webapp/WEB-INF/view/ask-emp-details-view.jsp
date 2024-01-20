@@ -22,6 +22,26 @@
     Salary<form:input path="salary"/>
     <br>
     <br>
+    Department<form:select path="department">
+    <form:options items="${employee.departments}"/> <%--добавление через Map--%>
+
+
+    <%--#################################--%>
+    <%-- private Map<String, String> departments; из класса Employee добавление через Map
+    public Employee() {
+        departments = new HashMap<>();
+        departments.put("IT", "Information Tehnology");
+        departments.put("HR", "Human Resourses");
+        departments.put("Sales", "Sales");
+    }--%>
+   <%-- <form:option value="Information Tehnology" label="IT"/>
+    <form:option value="Human Resourses" label="HR"/>
+    <form:option value="Sales" label="Sales"/>--%>
+    <%--#################################--%>
+
+</form:select>
+    <br>
+    <br>
     <input type="submit" value="OK">
 
 
