@@ -19,6 +19,8 @@ Your surname: ${employee.surname}
 Your salary: ${employee.salary}
 <br>
 Your department: ${employee.department}
+<br>
+Your car: ${employee.carBrand}
 <%--${description} &lt;%&ndash;  model.addAttribute("nameAttribute", empName);&ndash;%&gt;--%>
 </body>
 </html>
