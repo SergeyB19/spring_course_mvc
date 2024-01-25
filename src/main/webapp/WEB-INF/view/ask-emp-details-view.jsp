@@ -44,8 +44,14 @@
     <br>
     Which car do you want?
     <form:radiobuttons path="carBrand" items="${employee.carBrands}"/> <%-- через carBrands = new HashMap<>();--%>
-
-
+    <br>
+    <br>
+    Foreign Language(s)
+    <form:checkboxes path="languages" items="${employee.languageList}"/>
+    <%--создали private Map<String, String> languageList; в Employee--%>
+    <%--EN <form:checkbox path="languages" value="English"/>
+    DE <form:checkbox path="languages" value="Deutch"/>
+    FR <form:checkbox path="languages" value="French"/>--%>
 <%--    hardcoded variant--%>
 <%--    BMW <form:radiobutton path="carBrand" value="BMW"/>
     Audi <form:radiobutton path="carBrand" value="Audi"/>

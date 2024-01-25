@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -21,6 +22,18 @@ Your salary: ${employee.salary}
 Your department: ${employee.department}
 <br>
 Your car: ${employee.carBrand}
+<br>
+Language(s):
+<ul><%--unordered list--%>
+
+    <c:forEach var="lang" items="${employee.languages}">
+        <li><%--list item элемент списка--%>
+                ${lang}
+        </li>
+
+    </c:forEach>
+
+</ul>
 <%--${description} &lt;%&ndash;  model.addAttribute("nameAttribute", empName);&ndash;%&gt;--%>
 </body>
 </html>
