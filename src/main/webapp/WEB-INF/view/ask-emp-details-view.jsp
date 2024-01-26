@@ -14,9 +14,11 @@
 <form:form action="showDetails" modelAttribute="employee">
 
     Name<form:input path="name"/>
+    <form:errors path="name"/><%--Validation name @Size(min = 2, message = "name must be min 2 symbols")--%>
     <br>
     <br>
     Surname<form:input path="surname"/>
+    <form:errors path="surname"/>
     <br>
     <br>
     Salary<form:input path="salary"/>
