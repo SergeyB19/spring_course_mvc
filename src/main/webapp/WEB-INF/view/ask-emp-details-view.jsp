@@ -22,6 +22,7 @@
     <br>
     <br>
     Salary<form:input path="salary"/>
+    <form:errors path="salary"/>
     <br>
     <br>
     Department<form:select path="department">
@@ -50,6 +51,12 @@
     <br>
     Foreign Language(s)
     <form:checkboxes path="languages" items="${employee.languageList}"/>
+    <br>
+    <br>
+    Phone number<form:input path="phoneNumber"/>
+    <form:errors path="phoneNumber"/><%--Validation name @Size(min = 2, message = "name must be min 2 symbols")--%>
+    <br>
+    <br>
     <%--создали private Map<String, String> languageList; в Employee--%>
     <%--EN <form:checkbox path="languages" value="English"/>
     DE <form:checkbox path="languages" value="Deutch"/>

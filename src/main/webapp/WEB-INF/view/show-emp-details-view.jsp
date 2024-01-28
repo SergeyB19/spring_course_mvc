@@ -34,6 +34,7 @@ Language(s):
     </c:forEach>
 
 </ul>
+PhoneNumber: ${employee.phoneNumber}
 <%--${description} &lt;%&ndash;  model.addAttribute("nameAttribute", empName);&ndash;%&gt;--%>
 </body>
 </html>
