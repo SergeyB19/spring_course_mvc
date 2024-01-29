@@ -37,9 +37,9 @@
         departments.put("HR", "Human Resourses");
         departments.put("Sales", "Sales");
     }--%>
-   <%-- <form:option value="Information Tehnology" label="IT"/>
-    <form:option value="Human Resourses" label="HR"/>
-    <form:option value="Sales" label="Sales"/>--%>
+    <%-- <form:option value="Information Tehnology" label="IT"/>
+     <form:option value="Human Resourses" label="HR"/>
+     <form:option value="Sales" label="Sales"/>--%>
     <%--#################################--%>
 
 </form:select>
@@ -57,14 +57,18 @@
     <form:errors path="phoneNumber"/><%--Validation name @Size(min = 2, message = "name must be min 2 symbols")--%>
     <br>
     <br>
+    Email<form:input path="email"/>
+    <form:errors path="email"/><%--Validation name @Size(min = 2, message = "name must be min 2 symbols")--%>
+    <br>
+    <br>
     <%--создали private Map<String, String> languageList; в Employee--%>
     <%--EN <form:checkbox path="languages" value="English"/>
     DE <form:checkbox path="languages" value="Deutch"/>
     FR <form:checkbox path="languages" value="French"/>--%>
-<%--    hardcoded variant--%>
-<%--    BMW <form:radiobutton path="carBrand" value="BMW"/>
-    Audi <form:radiobutton path="carBrand" value="Audi"/>
-    MB <form:radiobutton path="carBrand" value="Mercedes-Benz"/>--%>
+    <%--    hardcoded variant--%>
+    <%--    BMW <form:radiobutton path="carBrand" value="BMW"/>
+        Audi <form:radiobutton path="carBrand" value="Audi"/>
+        MB <form:radiobutton path="carBrand" value="Mercedes-Benz"/>--%>
     <br>
     <br>
     <input type="submit" value="OK">

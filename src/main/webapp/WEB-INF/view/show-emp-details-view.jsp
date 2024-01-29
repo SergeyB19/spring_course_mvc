@@ -35,6 +35,8 @@ Language(s):
 
 </ul>
 PhoneNumber: ${employee.phoneNumber}
+<br>
+Email: ${employee.email}
 <%--${description} &lt;%&ndash;  model.addAttribute("nameAttribute", empName);&ndash;%&gt;--%>
 </body>
 </html>
